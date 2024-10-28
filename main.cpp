@@ -534,7 +534,7 @@ int main() {
     arr.print();  
     
     //поменять на автоматический подсчёт
-    arr.insert_middle(4);
+    arr.insert_middle(20);
     std::cout << "Вывод содержимого с 20 в середине " << '\n';
     arr.print();  
 
@@ -586,6 +586,8 @@ int main() {
     doubleList.erase(2); 
     doubleList.insert_middle(4);
     doubleList.print();
+
+    
 
     return 0;
 }
