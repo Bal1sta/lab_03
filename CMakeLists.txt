@@ -4,7 +4,7 @@ project(MyProject)
 set(CMAKE_CXX_STANDARD 11)
 
 # Добавление исполняемого файла
-add_executable(MyExecutable main.cpp)
+add_executable(MyExecutable main.cpp test.cpp)
 
 # Установка целевого каталога для установки
 set(CMAKE_INSTALL_PREFIX "/usr/local")  # Установка по умолчанию
