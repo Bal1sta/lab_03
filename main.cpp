@@ -20,7 +20,9 @@ private:
 /////////////////////////////////////////////////////////////////////////////////////
 public:
     DynamicArray(size_t initial_capacity = 10) // Конструктор, инициализирующий массив с начальной емкостью
-        : capacity(initial_capacity), length(0), data(new T[initial_capacity]) {} // Инициализация членов класса
+//capacity значение initial_capacity которое передается в конструктор, length=0 т.к. массив только что был создан и еще не содержит эл-ов, 
+//выделение памятидля массива типа Т с начальной емкостью initial_capacity
+        : capacity(initial_capacity), length(0), data(new T[initial_capacity]) {} // Инициализация членов класса 
 
     ~DynamicArray() { // Деструктор для освобождения памяти
         delete[] data; // Освобождаем память, занятую массивом

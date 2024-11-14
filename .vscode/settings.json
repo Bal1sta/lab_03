@@ -79,6 +79,8 @@
         "xutility": "cpp",
         "condition_variable": "cpp",
         "semaphore": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp"
     }
 }
