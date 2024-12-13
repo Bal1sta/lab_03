@@ -27,9 +27,10 @@ jobs:
       - name: Configure CMake
         run: cmake . -DCMAKE_BUILD_TYPE=Release
 
-      # Шаг 4: Сборка проекта
+      # Шаг 4: Сборка проекта с выводом ошибок
       - name: Build project
-        run: cmake --build .
+        run: cmake --build . || { echo 'Сборка не удалась'; exit 1; }
+
 
       # Шаг 5: Запуск тестов (если у вас есть тесты)
       - name: Run tests
