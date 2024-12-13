@@ -69,4 +69,4 @@ jobs:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: build/*.tar.gz
           asset_name: ${{ github.event.release.tag_name }}.tar.gz
-          asset_content_type: application/gzip
+          asset_content_type: application/gzip   
